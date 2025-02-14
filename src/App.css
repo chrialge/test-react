@@ -1,0 +1,107 @@
+.container {
+  max-width: 1200px;
+  width: 95%;
+  margin: auto;
+  padding: 5px;
+
+  &>.header {
+    margin-top: 30px;
+    background-color: rgb(58, 53, 53);
+    padding: 20px;
+    border-radius: 20px;
+
+    &>form {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+
+      &>.container_input {
+        display: flex;
+        flex-direction: column;
+
+        &>label {
+          margin-bottom: 5px;
+        }
+
+        &>input {
+          padding: 3px 10px;
+          border-top: 0;
+          border-left: 0;
+          border-right: 0;
+          background-color: transparent;
+          outline: 0;
+
+
+        }
+
+        &>span {
+          margin-top: 5px;
+          color: red;
+          display: none;
+        }
+      }
+
+      &>.container_button {
+        display: flex;
+        gap: 10px;
+
+        &>button {
+          cursor: pointer;
+          padding: 5px 15px;
+          border-radius: 10px;
+          border: 0;
+        }
+
+        &>.button_reset {
+          background-color: #f9cb4396;
+
+          &:hover {
+            background-color: #F9CB43;
+          }
+        }
+
+        &>.button_confirm {
+          background-color: #5db338a1;
+
+          &:hover {
+            background-color: #5CB338;
+          }
+        }
+      }
+    }
+  }
+
+  &>.table {
+    width: 100%;
+    margin-top: 20px;
+    border-spacing: 0;
+
+    &>table {
+      width: 100%;
+
+      &>thead>tr>th {
+        border: 1PX solid white;
+        background-color: rgb(58, 53, 53);
+      }
+
+      &>tbody>tr>td {
+        text-align: center;
+        border: 1px solid white;
+
+        &>#delete_btn {
+          margin: 5px 0;
+          cursor: pointer;
+          padding: 7px 10px;
+          border-radius: 5px;
+          background-color: #e520208f;
+
+          &:hover {
+            background-color: #E52020;
+          }
+        }
+      }
+    }
+  }
+}
