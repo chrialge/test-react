@@ -113,6 +113,7 @@ function App() {
   }
 
   const renderAttivity = (attivity, idx) => {
+
     return (
       <tr key={idx}>
         <td>{attivity.name}</td>
@@ -167,7 +168,7 @@ function App() {
               </tr>
             </thead>
             <tbody>
-              <FlatList list={attivities} renderItem={renderAttivity} sortBy={[{ key: "id", descending: true }]} renderWhenEmpty={() => <tr><td colSpan={3}> List empty!</td> </tr>} />
+              <FlatList list={attivities} renderItem={renderAttivity} sortBy={[{ key: "id", descending: true }]} renderWhenEmpty={() => ""} />
             </tbody>
           </table>
         </div>
